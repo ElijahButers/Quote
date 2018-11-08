@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Quote: NSObject {
+class Quote: NSObject, NSCoding {
     
     let text: String
     let author: String
