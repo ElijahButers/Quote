@@ -36,5 +36,14 @@ class Quote: NSObject, NSCoding {
 
 class Model {
     
-    let quote = Quote(text: "Two things are infinite: the universe and human stupidity; and I am not sure about the universe.", author: "Albert Einstein")
+    let quoteFilePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/quote.text"
+    var quote: Quote {
+        get {
+            return NSKeyedUnarchiver.unarchiveObject(withFile: quoteFilePath) as? Quote ?? Quote(text: "Two things are infinite: the universe and human stupidity; and I am not sure about the universe.", author: "Albert Einstein")
+        }
+        set {
+            NSKeyedArchiver.archiveRootObject(newValue, toFile: quoteFilePath)
+        }
+        
+        }
 }
