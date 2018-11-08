@@ -17,6 +17,21 @@ class Quote: NSObject, NSCoding {
         self.text = text
         self.author = author
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        text = aDecoder.decodeObject(forKey: Keys.text.rawValue) as! String
+        author = aDecoder.decodeObject(forKey: Keys.text.rawValue) as! String
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(text, forKey: Keys.text.rawValue)
+        aCoder.encode(author, forKey: Keys.text.rawValue)
+    }
+    
+    enum Keys: String {
+        case text = "text"
+        case author = "author"
+    }
 }
 
 class Model {
