@@ -18,3 +18,8 @@ class Quote: NSObject {
         self.author = author
     }
 }
+
+class Model {
+    
+    let quote = Quote(text: "Two things are infinite: the universe and human stupidity; and I am not sure about the universe.", author: "Albert Einstein")
+}
