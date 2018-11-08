@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Quote: NSObject {
+    
+    let text: String
+    let author: String
+    
+    init(text: String, author: String) {
+        self.text = text
+        self.author = author
+    }
+}
