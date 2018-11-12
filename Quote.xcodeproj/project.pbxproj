@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E272751D2194196A00C5846F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E272751C2194196A00C5846F /* Quote.swift */; };
 		E28D8EC921933104004F309E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D8EC821933104004F309E /* AppDelegate.swift */; };
-		E28D8ECB21933104004F309E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D8ECA21933104004F309E /* ViewController.swift */; };
+		E28D8ECB21933104004F309E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D8ECA21933104004F309E /* QuoteViewController.swift */; };
 		E28D8ECE21933104004F309E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28D8ECC21933104004F309E /* Main.storyboard */; };
 		E28D8ED121933104004F309E /* Quote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E28D8ECF21933104004F309E /* Quote.xcdatamodeld */; };
 		E28D8ED321933105004F309E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28D8ED221933105004F309E /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		E272751C2194196A00C5846F /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		E28D8EC521933103004F309E /* Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28D8EC821933104004F309E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E28D8ECA21933104004F309E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E28D8ECA21933104004F309E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		E28D8ECD21933104004F309E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E28D8ED021933104004F309E /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
 		E28D8ED221933105004F309E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E28D8EC821933104004F309E /* AppDelegate.swift */,
-				E28D8ECA21933104004F309E /* ViewController.swift */,
+				E28D8ECA21933104004F309E /* QuoteViewController.swift */,
 				E272751C2194196A00C5846F /* Quote.swift */,
 				E2ABE5932199CEDA008BCC82 /* EditViewController.swift */,
 				E28D8ECC21933104004F309E /* Main.storyboard */,
@@ -146,7 +146,7 @@
 			files = (
 				E2ABE5942199CEDA008BCC82 /* EditViewController.swift in Sources */,
 				E272751D2194196A00C5846F /* Quote.swift in Sources */,
-				E28D8ECB21933104004F309E /* ViewController.swift in Sources */,
+				E28D8ECB21933104004F309E /* QuoteViewController.swift in Sources */,
 				E28D8EC921933104004F309E /* AppDelegate.swift in Sources */,
 				E28D8ED121933104004F309E /* Quote.xcdatamodeld in Sources */,
 			);
