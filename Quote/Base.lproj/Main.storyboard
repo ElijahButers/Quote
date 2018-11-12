@@ -55,6 +55,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="quoteAuthorLabel" destination="4yO-7y-0lp" id="nKn-CX-48g"/>
+                        <outlet property="quoteTextLabel" destination="fas-jT-u1l" id="6P7-bO-1cj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
