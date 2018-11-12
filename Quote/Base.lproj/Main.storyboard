@@ -55,7 +55,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uJj-pk-Ads"/>
+                    <navigationItem key="navigationItem" id="uJj-pk-Ads">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Vit-5Q-dZy">
+                            <connections>
+                                <segue destination="Vpg-GL-Tse" kind="show" id="Seu-SK-HtZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="quoteAuthorLabel" destination="4yO-7y-0lp" id="nKn-CX-48g"/>
                         <outlet property="quoteTextLabel" destination="fas-jT-u1l" id="6P7-bO-1cj"/>
@@ -64,6 +70,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="949.27536231884062" y="26.116071428571427"/>
+        </scene>
+        <!--Edit Quote-->
+        <scene sceneID="Okw-Ge-D4J">
+            <objects>
+                <viewController id="Vpg-GL-Tse" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4l9-n5-rZl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bq7-lj-oKU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Quote" id="rIT-Uc-ml7">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="aMb-Y3-F87"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZtU-ga-Qr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="24"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qjp-wh-MrZ">
