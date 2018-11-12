@@ -122,8 +122,16 @@
                         <viewLayoutGuide key="safeArea" id="bq7-lj-oKU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit quote" id="rIT-Uc-ml7">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="aMb-Y3-F87"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="aMb-Y3-F87">
+                            <connections>
+                                <action selector="save:" destination="Vpg-GL-Tse" id="U4v-5Z-2VW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="oIC-rl-c79" id="P7k-hG-e9G"/>
+                        <outlet property="textView" destination="Y6n-Gx-7r1" id="NUl-f3-xAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtU-ga-Qr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

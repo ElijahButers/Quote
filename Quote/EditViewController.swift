@@ -10,4 +10,9 @@ import UIKit
 
 class EditViewController: UIViewController {
     
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBAction func save(_ sender: Any) {
+    }
 }
