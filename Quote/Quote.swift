@@ -34,7 +34,7 @@ class Quote: NSObject, NSCoding {
     }
 }
 
-class Model {
+class ModelController {
     
     let quoteFilePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/quote.text"
     var quote: Quote {
@@ -45,5 +45,5 @@ class Model {
             NSKeyedArchiver.archiveRootObject(newValue, toFile: quoteFilePath)
         }
         
-        }
+    }
 }

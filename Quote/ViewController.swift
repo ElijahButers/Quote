@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var quoteTextLabel: UILabel!
     @IBOutlet weak var quoteAuthorLabel: UILabel!
     
+    let modelController = ModelController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
