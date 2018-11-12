@@ -74,7 +74,7 @@
         <!--Edit quote-->
         <scene sceneID="Okw-Ge-D4J">
             <objects>
-                <viewController id="Vpg-GL-Tse" sceneMemberID="viewController">
+                <viewController id="Vpg-GL-Tse" customClass="EditViewController" customModule="Quote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4l9-n5-rZl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
