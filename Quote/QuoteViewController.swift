@@ -23,6 +23,12 @@ class QuoteViewController: UIViewController {
         quoteAuthorLabel.text = quote.author
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let editViewController = segue.destination as? EditViewController {
+            editViewController.quote = modelController.quote
+        }
+    }
 
 
 }
