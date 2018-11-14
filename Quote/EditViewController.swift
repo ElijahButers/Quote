@@ -15,6 +15,13 @@ class EditViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textView.text = quote?.text
+        textField.text = quote?.author
+    }
+    
     @IBAction func save(_ sender: Any) {
     }
 }
