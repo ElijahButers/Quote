@@ -10,6 +10,8 @@ import UIKit
 
 class EditViewController: UIViewController {
     
+    var quote: Quote?
+    
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
     
