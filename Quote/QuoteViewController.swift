@@ -29,6 +29,10 @@ class QuoteViewController: UIViewController, EditViewControllerDelegate {
             editViewController.quote = modelController.quote
         }
     }
+    
+    func quoteWasSaved(quote: Quote) {
+
+    }
 
 
 }
