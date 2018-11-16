@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuoteViewController: UIViewController {
+class QuoteViewController: UIViewController, EditViewControllerDelegate {
 
     @IBOutlet weak var quoteTextLabel: UILabel!
     @IBOutlet weak var quoteAuthorLabel: UILabel!
