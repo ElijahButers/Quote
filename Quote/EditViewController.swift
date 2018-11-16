@@ -15,7 +15,7 @@ protocol EditViewControllerDelegate: class {
 class EditViewController: UIViewController {
     
     var quote: Quote?
-    var delegate: EditViewControllerDelegate?
+    weak var delegate: EditViewControllerDelegate?
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
@@ -28,5 +28,9 @@ class EditViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
+        
+        let newQuote = Quote(text: textView.text, author: textField.text!)
+        delegate?.quoteWasSaved(quote: newQuote)
+        self.navigationController?.popViewController(animated: true)
     }
 }
