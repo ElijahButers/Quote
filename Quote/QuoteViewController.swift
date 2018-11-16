@@ -27,6 +27,7 @@ class QuoteViewController: UIViewController, EditViewControllerDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let editViewController = segue.destination as? EditViewController {
             editViewController.quote = modelController.quote
+            editViewController.delegate = self
         }
     }
     
