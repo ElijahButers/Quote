@@ -15,6 +15,7 @@ protocol EditViewControllerDelegate: class {
 class EditViewController: UIViewController {
     
     var quote: Quote?
+    var delegate: EditViewControllerDelegate?
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
