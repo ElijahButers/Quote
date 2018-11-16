@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol EditViewControllerDelegate: class {
+    func quoteWasSaved(quote: Quote)
+}
+
 class EditViewController: UIViewController {
     
     var quote: Quote?
