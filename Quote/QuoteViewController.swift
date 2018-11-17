@@ -32,7 +32,8 @@ class QuoteViewController: UIViewController, EditViewControllerDelegate {
     }
     
     func quoteWasSaved(quote: Quote) {
-
+        
+        modelController.quote = quote
     }
 
 
