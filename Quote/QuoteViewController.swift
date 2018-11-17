@@ -37,7 +37,8 @@ class QuoteViewController: UIViewController, EditViewControllerDelegate {
     }
     
     func updateUIWithQuote(quote: Quote) {
-        
+        quoteTextLabel.text = quote.text
+        quoteAuthorLabel.text = quote.author
     }
 
 
