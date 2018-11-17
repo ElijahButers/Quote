@@ -18,10 +18,7 @@ class QuoteViewController: UIViewController, EditViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let quote = modelController.quote
-        quoteTextLabel.text = quote.text
-        quoteAuthorLabel.text = quote.author
-        
+        updateUIWithQuote(quote: modelController.quote)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
