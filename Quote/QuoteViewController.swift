@@ -31,6 +31,7 @@ class QuoteViewController: UIViewController, EditViewControllerDelegate {
     func quoteWasSaved(quote: Quote) {
         
         modelController.quote = quote
+        updateUIWithQuote(quote: quote)
     }
     
     func updateUIWithQuote(quote: Quote) {
